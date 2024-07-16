@@ -67,7 +67,7 @@
        - 3: Artifact Replicated Badge.
        - 4: Artifact Available Badge.
 3. ***full*** folder: contains merged rows from data in ***evaluation*** folder for executing Coxcomb graphs.
-4. ***DYH - Papers - Research Questions.csv:*** This file contains USENIX (Tier 1 Security Conferences) data from previous work required to visualize Figure 6 in our paper.
+4. ***tier1.csv:*** This file contains USENIX (Tier 1 Security Conferences) data from previous work required to visualize Figure 6 in our paper.
 ## Scripts
 Scripts used for analyses and figures are located in the ***scripts*** folder. All scripts for creating figures use ***Python 3.9.13*** and require changing the file/folder paths:
 1. *dyh2_figures_4_and_6.ipynb:* This Jupyter Notebook script contains the codes to reproduce Figure 4 and Figure 6 in the paper.
