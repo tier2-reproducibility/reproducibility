@@ -2,6 +2,9 @@
 ## Table of Contents
 - [Data](#Data)
 - [Scripts](#Scripts)
+- [Docker](#Docker)
+- [Embeddings](#Embeddings)
+- [Clustering](#Clustering)
 ## Data
 1. ***conf*** folder: contains data of all four Tier 2 Security conferences (ACSAC, Asia CCS, Euro S&P, and WiSec), with the following rows:
    1. *Conference*: The conference that the paper was accepted at
@@ -88,3 +91,8 @@ Scripts used for analyses and figures are located in the ***scripts*** folder. A
      pandas==1.4.4
      seaborn==0.11.2
      ```
+## Docker
+
+## Embeddings
+
+## Clustering
