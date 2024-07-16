@@ -64,4 +64,5 @@
        - 2: Artifact Reproduced Badge.
        - 3: Artifact Replicated Badge.
        - 4: Artifact Available Badge.
+3. ***full*** folder: contains merged rows from data in ***evaluation*** folder for executing Coxcomb graphs.
 ## Scripts
