@@ -67,5 +67,14 @@
        - 4: Artifact Available Badge.
 3. ***full*** folder: contains merged rows from data in ***evaluation*** folder for executing Coxcomb graphs.
 ## Scripts
-Scripts used for analyses and figures are located in the ***scripts*** folder
-1. *dyh2_figures_4_and_6.ipynb*: This figure contains the Jupyter Notebook codes to reproduce Figure 4 and Figure 6 in the paper. 
+Scripts used for analyses and figures are located in the ***scripts*** folder. All scripts for creating figures use ***Python 3.9.13***:
+1. *dyh2_figures_4_and_6.ipynb*: This Jupyter Notebook script contains the codes to reproduce Figure 4 and Figure 6 in the paper.
+   - The following packages are used run this code:
+     ```
+     matplotlib==3.5.2
+     numpy==1.23.5
+     pandas==1.4.4
+     plotly==5.9.0
+     plotly_express==0.4.1
+     seaborn==0.11.2
+     ```
