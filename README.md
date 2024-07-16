@@ -67,3 +67,5 @@
        - 4: Artifact Available Badge.
 3. ***full*** folder: contains merged rows from data in ***evaluation*** folder for executing Coxcomb graphs.
 ## Scripts
+Scripts used for analyses and figures are located in the ***scripts*** folder
+1. *dyh2_figures_4_and_6.ipynb*: This figure contains the Jupyter Notebook codes to reproduce Figure 4 and Figure 6 in the paper. 
