@@ -4,12 +4,12 @@
 - [Scripts](#Scripts)
 ## Data
 1. ***conf*** folder: contains data of all four Tier 2 Security conferences (ACSAC, Asia CCS, Euro S&P, and WiSec), with the following rows:
-   1. *Conference*: The conference that the paper was accepted at.
-   2. *Year*: The year that the paper was published.
-   3. *Title*: The title of the paper.
-   4. *Authors*: Authors of the paper.
-   5. *PDF Link*: Link to the PDF version of the paper.
-   6. *Code*: Link to the repository for code directly associated with the paper.
+   1. *Conference*: The conference that the paper was accepted at
+   2. *Year*: The year that the paper was published
+   3. *Title*: The title of the paper
+   4. *Authors*: Authors of the paper
+   5. *PDF Link*: Link to the PDF version of the paper
+   6. *Code*: Link to the repository for code directly associated with the paper
 2. ***evaluation*** folder: contains the data of indirect and direct study:
    1. *Author Affiliation:*
       - 0: Academic
@@ -40,32 +40,32 @@
    5. *Last Modified:*
       - Date of last commit/modification (MM/DD/YYYY)
    6. *Language:*
-      - Free response (Python, C, Java, etc.)
+      - Free response, the dominant language used in repo/project (Python, C, Java, etc.)
    7. *Compiles:*
       - -1: N/A
       - 0: Compiles Right Away (No need to edit/modify code to compile the repo)
       - 1: Compiles After Edits (Edits in file structure/variables to get the code to run)
       - 2: Doesn't Run (Doesn't compile even after edits)
-      - 3: Ran and Does Not Compile (requires extra components/hardware (i.e., GPU, phone, raspberry pi, etc. not explicitly mentioned in repo/paper.)
-      - 4: Not Ran (requires extra components/hardware explicitly mentioned in paper/repo.)
+      - 3: Ran and Does Not Compile (requires extra components/hardware (i.e., GPU, phone, raspberry pi, etc. not explicitly mentioned in repo/paper)
+      - 4: Not Ran (requires extra components/hardware explicitly mentioned in paper/repo)
    8. *Output Matches:*
       - -1: Does Not Match (A tool/repo not designed/made for reproducibility)
       - 0: Output Does Not Match (Output is +/-10% difference compared to claims of paper.)
-      - 1: Output Matches (Best Effort, output is within +/-10% difference compared to claims of paper.)
+      - 1: Output Matches (Best Effort, output is within +/-10% difference compared to claims of paper)
    9. *Hardware:*
-       - Free Response, lists extra hardware required in order to reproduce.
+       - Free Response, list of extra hardware required in order to reproduce
    10. *Made for Reproducibility:*
-       - 0: For reproducibility.
-       - 1: Not For Reproducibility.
+       - 0: For Reproducibility
+       - 1: Not For Reproducibility
    11. *Funding:*
-       - Free Response, lists the biggest/first agency name in the Acknowledgements section of the paper.
+       - Free Response, lists the biggest/first agency name in the Acknowledgements section of the paper
    12. *Artifact Evaluation:*
-       - -1: Not Submitted to AEC.
-       - 0: Artifact Evaluated Functional Badge.
-       - 1: Artifact Evaluated Reusable Badge.
-       - 2: Artifact Reproduced Badge.
-       - 3: Artifact Replicated Badge.
-       - 4: Artifact Available Badge.
+       - -1: Not Submitted to AEC
+       - 0: Artifact Evaluated Functional Badge
+       - 1: Artifact Evaluated Reusable Badge
+       - 2: Artifact Reproduced Badge
+       - 3: Artifact Replicated Badge
+       - 4: Artifact Available Badge
 3. ***full*** folder: contains merged rows from data in ***evaluation*** folder for executing Coxcomb graphs.
 4. ***tier1.csv:*** This file contains USENIX (Tier 1 Security Conferences) data from previous work required to visualize Figure 6 in our paper.
 ## Scripts
