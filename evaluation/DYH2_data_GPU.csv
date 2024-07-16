@@ -1,0 +1,264 @@
+Paper Title,Author,Link to Paper,Link for Code,Conference,Year,Author Affiliation,ReadMe,Type,Available,Last Modified,Language,Evaluate Later,Compiles,Output Matches,Hardware,Made for Reproducibility,Funding,Artifact Evaluation,Comments,,
+Portability of Deep-Learning Side-Channel Attacks against Software Discrepancies,"Chenggang Wang, Mabon Ninan, Shane Reilly, Joel Ward, William Hawkins, Boyang Wang, John M Emmert",https://dl.acm.org/doi/pdf/10.1145/3558482.3590177,https://github.com/UCdasec/SoftPower,WiSec,2023,0,1,1,2,4/10/2024,Python,,1,2,,0,"National Science Foundation, NSF IUCRC Center for Hardware and Embedded System Security and Trust",-1,"no OS version
+Data stored in a sharepoint in MANY files with no easy way to download everything at once
+Looks like its 60+ GB to download
+unsure which folder corresponds to which table, or even if they are all used
+Used up 1 hour searching for which db to use, and what input to put into the given scripts",WiSec-2023-Portability_of_Deep-Learning_Side-Channel_Attacks_against_Software_Discrepancies,2_WiSec-2023-Portability_of_Deep-Learning
+Transformer-based Extraction of Deep Image Models,"Verena Battis, Alexander Penner",https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9797343,https://github.com/Fraunhofer-SIT/ModExTransformer,EuroS&P,2022,-1,2,"1,2",2,3/18/2022,Python,,1,2,,0,,-1,"NO OS version
+No Python version
+broken dependency in their requirements.txt (numpy version)
+Ran out of time when training the first of 3 models",EuroS&P-2022-Transformer-based_Extraction_of_Deep_Image_Models,3_EuroSP-2022-Transformer-based_Extraction_of
+GRAPHITE: Generating Automatic Physical Examples for Machine-Learning Attacks on Computer Vision Systems,"Ryan Feng, Neal Mangaokar, Jiefeng Chen, Earlence Fernandes, Somesh Jha, Atul Prakash",https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9797381,https://github.com/ryan-feng/GRAPHITE,EuroS&P,2022,0,2,"1,2",2,4/19/2024,Python,,0,3,,0,"DARPA, Air Force, NSF, ARO, Wisconsin Alumni Research Foundation",-1,"No OS, No Python
+Missing packaging (python) dependency
+Does not provide code for all figures/tables (only 1 table) and even with that it isnt clear how to map the script output to the table numbers/images",EuroS&P-2022-GRAPHITE:_Generating_Automatic_Physical_Examples_for_Machine-Learning_Attacks_on_Computer_Vision_Systems,4_EuroSP-2022-GRAPHITE_Generating_Automatic
+BFU: Bayesian Federated Unlearning with Parameter Self-Sharing,"Weiqi Wang,Zhiyi Tian,Chenhan Zhang,An Liu,Shui Yu",https://dl.acm.org/doi/pdf/10.1145/3579856.3590327,https://github.com/wwq5-code/BFU-Code,AsiaCCS,2023,0,1,"1,2",2,11/13/2023,Python,,2,-1,,0,Australian Research Council,-1,"No OS version
+Scripts have a path error to .py file
+Missing python dependency (torchvision), installing this installs a newer version of torch, which breaks the code. Downgrading the torch version back to the given version in the github then breaks the torchvision install. Had to go find a compatability matrix between these two dependencies to solve this.
+Issues with cmap=""gray"" in a couple torchvision calls. Removing this then there is another unexpected keyword argument (function was unused so I commented it out). This happened 3 times....
+Ran out of 1 hour time",AsiaCCS-2023-BFU:_Bayesian_Federated_Unlearning_with_Parameter_Self-Sharing,5_AsiaCCS-2023-BFU_Bayesian_Federated
+Reconstruction Attack on Differential Private Trajectory Protection Mechanisms,"Erik Buchholz, Alsharif Abuadbba, Shuo Wang, Surya Nepal, Salil Subhash Kanhere",https://dl.acm.org/doi/pdf/10.1145/3564625.3564628,https://github.com/erik-buchholz/RAoPT,ACSAC,2022,8,2,1,2,10/19/2023,Python,,2,-1,,0,,0,"Errors on their unit test script (missing custom module)
+processing given datasets worked
+Adding a ""projection trajectory"" to one of the datasets is estimated at 207 hours and this need to be done 37 times (but they state you can cancel it any time.) So I ran for a few minutes and canceled it.
+I did the preprocssing (cut-off) for 2 of the 37 and am trying the evaluation script
+
+Needs 128GB RAM (even with this, does not run)",ACSAC-2022-Reconstruction_Attack_on_Differential_Private_Trajectory_Protection_Mechanisms,6_ACSAC-2022-Reconstruction_Attack_on
+Practical Operation Extraction from Electromagnetic Leakage for Side-Channel Analysis and Reverse Engineering,"Pieter Robyns, Mariano Di Martino, Dennis Giese, Wim Lamotte, Peter Quax, Guevara Noubir",https://dl.acm.org/doi/pdf/10.1145/3395351.3399362,https://github.com/rpp0/em-operation-extraction,WiSec,2020,0,1,1,2,"May 13, 2020","Python, Shell",VM,,,,0,Research Foundation Flanders and BOF,"0,2,4",This one requires a VM and GPU which Hipergator does not support,WiSec-2020-Practical_Operation_Extraction_from_Electromagnetic_Leakage_for_Side-Channel_Analysis_and_Reverse_Engineering,7_WiSec-2020-Practical_Operation_Extraction
+An Unbiased Transformer Source Code Learning with Semantic Vulnerability Graph,"Nafis Tanveer Islam,Gonzalo De La Torre Parra,Dylan Manuel,Elias Bou-Harb,Peyman Najafirad",https://arxiv.org/pdf/2304.11072.pdf,https://github.com/pial08/SemVulDet,EuroS&P,2023,0,2,"1,2",2,"Jul 19, 2023","Python, C++, Shell",,2,-1,,0,NSF,-1,"Missing tensorboard, tensorboardX, scipy,sklearn dependency.
+Running their run.sh script breaks when giving it the paramters they suggest (file locations specifically)
+The helpers that they have for describing the args that the code takes are contradictory to the directions issued in  the readme",EuroS&P-2023-An_Unbiased_Transformer_Source_Code_Learning_with_Semantic_Vulnerability_Graph,8_EuroSP-2023-An_Unbiased_Transformer
+Lethe: Practical Data Breach Detection with Zero Persistent Secret State,"Antreas Dionysiou, Elias Athanasopoulos",https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9797372,https://bitbucket.org/srecgrp/lethe-public/src/master/,EuroS&P,2022,0,1,"1,2",2,2024-01-11,Python,,0,1,,0,"European Union’s Horizon 2020 research, the Marie SkłodowskaCurie grant agreement",-1,Needed at least 20gb of memory,EuroS&P-2022-Lethe:_Practical_Data_Breach_Detection_with_Zero_Persistent_Secret_State,9_EuroSP-2022-Lethe_Practical_Data
+Unrolling SGD: Understanding Factors Influencing Machine Unlearning,"Anvith Thudi, Gabriel Deza, Varun Chandrasekaran, Nicolas Papernot",https://www.computer.org/csdl/pds/api/csdl/proceedings/download-article/1ErpDNietvW/pdf,https://github.com/cleverhans-lab/unrolling-sgd,EuroS&P,2022,0,1,1,2,"Mar 13, 2022",Python,,2,-1,,1,"Canada CIFAR AI Chair program, GARD program, Intel, Meta, NFRF, NSERC, and COHESA Strategic Alliance",-1,"no parameters given for any file
+Installing requirements as needed
+PyHessian package will not load correctly (not from pip, or source)",EuroS&P-2022-Unrolling_SGD:_Understanding_Factors_Influencing_Machine_Unlearning,10_EuroSP-2022-Unrolling_SGD_Understanding
+Trojaning Language Models for Fun and Profit,"Xinyang Zhang,Zheng Zhang,Shouling Ji,Ting Wang",https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9581257,https://github.com/alps-lab/trojan-lm,EuroS&P,2021,0,1,1,2,"Jun 17, 2021","Python, Shell",,2,-1,,1,"NSF, National Key Research and Development Program of China, NSFC, Zhejiang Provincial Natural Science Foundation for Distinguished Young Scholars, Fundamental Research Funds for the Central Universities",-1,"No python version
+Some of their scripts call code that does not exist
+readme missing most all dependencies
+scripts for code that does exist tries to access hard coded data that is missing
+Typos in the name of python files in the scripts provided",EuroS&P-2021-Trojaning_Language_Models_for_Fun_and_Profit,11_EuroSP-2021-Trojaning_Language_Models
+Sponge Examples: Energy-Latency Attacks on Neural Networks,"Ilia Shumailov,Yiren Zhao,Daniel Bates,Nicolas Papernot,Robert Mullins,Ross Anderson",https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9581273,https://github.com/iliaishacked/sponge_examples,EuroS&P,2021,0,0,1,2,"Oct 13, 2021",Python,,2,-1,,1,"CIFAR, EPSRC, Apple, Bosch Forschungsstiftung im Stifterverband, NSERC, and Microsoft",-1,"No information in the readme
+there is a ""run.py"" file in a subdir
+No OV/python version
+No python reqs
+No data/download instructions, thus the run.py doesnt do anything
+",EuroS&P-2021-Sponge_Examples:_Energy-Latency_Attacks_on_Neural_Networks,12_EuroSP-2021-Sponge_Examples_Energy-Latency
+Biometric Backdoors: A Poisoning Attack Against Unsupervised Template Updating,"Giulio Lovisotto, Simon Eberz, Ivan Martinovic",https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9230411,https://github.com/ssloxford/biometric-backdoors,EuroS&P,2020,0,1,"1,2",2,"Nov 29, 2021",Python,,2,-1,,1,"Mastercard, Engineering and Physical SciencesResearch Council",-1,"Missing install instructions for dependencies that were installed ""from source""
+Missing download/install instructions for the models that were used
+No scripts given to train/test/replicate anything (also no obvious main file)
+Given .yml conda env file breaks with clashing dependencies
+",EuroS&P-2020-Biometric_Backdoors:_A_Poisoning_Attack_Against_Unsupervised_Template_Updating,13_EuroSP-2020-Biometric_Backdoors_A
+Boost Off/On-Manifold Adversarial Robustness for Deep Learning with Latent Representation Mixup,"Mengdie Huang,Yi Xie,Xiaofeng Chen,Jin Li,Changyu Dong,Zheli Liu,Willy Susilo",https://dl.acm.org/doi/pdf/10.1145/3579856.3595786,https://github.com/2022Submit/LarepMixup,AsiaCCS,2023,0,0,"1,2",2,"Aug 28, 2023","Python, C++",,3,-1,,1,ational Nature Science Foundation of China,-1,"blank readme
+has a file ""tasklauncher"" in the base location (might be the start)
+no OS/no Python version (picked python 3.7 at random)
+no dependencies
+Installed dependencies based on their most recent python 3.7 version
+This gives missing function errors
+
+Too much time to find correct python and dependency version",AsiaCCS-2023-Boost_Off/On-Manifold_Adversarial_Robustness_for_Deep_Learning_with_Latent_Representation_Mixup,14_AsiaCCS-2023-Boost_OffOn-Manifold_Adversarial
+DySan: Dynamically Sanitizing Motion Sensor Data Against Sensitive Inferences through Adversarial Networks,Boutet Antoine and Frindel Carole and Gambs Sebastian and Jourdan Theo and Ngueveu Rosin Claude,https://dl.acm.org/doi/pdf/10.1145/3433210.3453095,https://github.com/DynamicSanitizer/DySan,AsiaCCS,2021,1,1,"1,2",2,"Oct 1, 2020",Python,,3,-1,,1,"ANR, Canada Research Chair program, Legalia project (FQRNT), Office of the Privacy Commissioner (OPC) of Canada",-1,"no Os version
+no python version (randomly selecting 3.7)
+reqs file in weird format
+python 3.7 clashed with the reqs, updating to 3.9 per pips suggestion
+many broken dependencies in reqs file (had to remove or change many version of packages)
+This caused SO MANY clashing dependencies
+Trying again with python3.8
+Ran out of time during python 3.8 install and setup with more clashes",AsiaCCS-2021-DySan:_Dynamically_Sanitizing_Motion_Sensor_Data_Against_Sensitive_Inferences_through_Adversarial_Networks,15_AsiaCCS-2021-DySan_Dynamically_Sanitizing
+On the Security of Randomized Defenses Against Adversarial Samples,Kumar Sharad and Marson Giorgia Azzurra and Hien Thi Thu  Truong and Ghassan Karame,https://dl.acm.org/doi/pdf/10.1145/3320269.3384751,https://github.com/carlini/nn_robust_attacks/,AsiaCCS,2020,4,1,1,2,"Dec 2, 2020",Python,,2,-1,,0,European Union’s Horizon 2020 research and innovation programme,,"issues with specified ""tensorflow-gpu"" package. Removed ""-gpu"" and it worked
+Issues with old dependencies
+Code is 7-8 years old and it just suggests ""python3"" and packages without version
+installing as described creates missing functions
+fix these missing function imports creates more isues with invalid arguments given",AsiaCCS-2020-On_the_Security_of_Randomized_Defenses_Against_Adversarial_Samples,16_AsiaCCS-2020-On_the_Security
+LockedDown: Exploiting Contention on Host-GPU PCIe Bus for Fun and Profit,"Mert Side, Fan Yao, Zhenkai Zhang",https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9797371,https://github.com/mertside/lockeddown,EuroS&P,2022,0,0,1,2,"Jun 10, 2022","Cuda, Python",,3,-1,,1,NSF,,"No scripts to run for testing
+No install instructions
+No main file in any of the directories
+Looks like some of the code is CUDA code and there are no instructions on how to run this type of code
+
+Looking through the couple python files, it doesn't seem like any of them are more than local debugging testing scripts, which means the main code is CUDA coda",EuroS&P-2022-LockedDown:_Exploiting_Contention_on_Host-GPU_PCIe_Bus_for_Fun_and_Profit,17_EuroSP-2022-LockedDown_Exploiting_Contention
+DitDetector: Bimodal Learning based on Deceptive Image and Text for Macro Malware Detection,"Jia Yan, Ming Wan, Xiangkun Jia, Lingyun Ying, Purui Su, Zhanyi Wang",https://dl.acm.org/doi/pdf/10.1145/3564625.3567982,https://gitee.com/yjasper/dit-detector,ACSAC,2022,3,2,"1,2",2,2022,Python,,0,-1,,0,"National Nature Science Foundation of China, Frontier Science and Technology Innovation Project, Outstanding Science and Technology Talent Program of ISCAS",1,"They do not include the data that they used in the paper
+Nor do they include where to get the data
+The only example script they give is using some test data and it times execution, but there is no execution time comparison in the paper
+Cannot replicate the results in the paper as there is no output to map",ACSAC-2022-DitDetector:_Bimodal_Learning_based_on_Deceptive_Image_and_Text_for_Macro_Malware_Detection,18_ACSAC-2022-DitDetector_Bimodal_Learning
+Can We Leverage Predictive Uncertainty to Detect Dataset Shift and Adversarial Examples in Android Malware Detection?,"Li, Deqiang and Qiu, Tian and Chen, Shuo and Li, Qianmu and Xu, Shouhuai",https://dl.acm.org/doi/pdf/10.1145/3485832.3485916,https://github.com/deqangss/malware-uncertainty,ACSAC,2021,1,1,1,2,"Nov 30, 2021",Python,,-1,-1,,0,"National Key R&D Program of China, 2020 Industrial Internet Innovation and Development Project from Ministry of Industry and Information Technology of China, Fundamental Research Fund for the Central Universities, 2019 Industrial Internet Innovation and Development Project from Ministry of Industry and Information Technology of China",-1,"Need to send email to get access to a dataset (DREBIN) and the email address is undeliverable (from the drebin dataset download website)
+Need an invitation to the website to download the second dataset (virusshare) (access granted)
+Need permissions for 3rd dataset also (email sent)",ACSAC-2021-Can_We_Leverage_Predictive_Uncertainty_to_Detect_Dataset_Shift_and_Adversarial_Examples_in_Android_Malware_Detection?,19_ACSAC-2021-Can_We_Leverage
+Detecting Audio Adversarial Examples with Logit Noising,"Park, Namgyu and Ji, Sangwoo and Kim, Jong",https://dl.acm.org/doi/pdf/10.1145/3485832.3485912,https://github.com/namgyupark22/_Detecting_Audio_Adversarial_Examples_with_Logit_Noising,ACSAC,2021,0,2,1,2,"Oct 4, 2021",Python,,-1,-1,,0,"Institute of Information and Communication Technology Planning and Evaluation, Ministry of Science and ICT",0,"requires DeepSpeech to be installed to work, however from the official DeepSpeech github the installation instructions for installing a Native Client do not work (there is no taskcluster.py file that they say to run)
+Thus, due to this, the paper cannot be replicated.
+reading the DeepSpeech github issues seems to state that this project has not been maintained since 2021",ACSAC-2021-Detecting_Audio_Adversarial_Examples_with_Logit_Noising,20_ACSAC-2021-Detecting_Audio_Adversarial
+Squeezing More Utility via Adaptive Clipping on Differentially Private Gradients in Federated Meta-Learning,"Ning Wang, Yang Xiao, Yimin Chen, Ning Zhang, Wenjing Lou, Y. Thomas Hou",https://dl.acm.org/doi/pdf/10.1145/3564625.3564652,https://github.com/ning-wang1/DPFedMeta,ACSAC,2022,0,2,1,2,"Oct 9, 2022","Python, Shell",,1,2,,0,"ONR, NSF, ARO",0,"clashing dependencies in their environment file. Had to manually find the correct ones
+Has broken links to datasets used
+manually finding datasets is proving to be problematic
+
+Ran out of 10hr run time when training the first of 3 models (they do not provide pretrained models or scores files)",ACSAC-2022-Squeezing_More_Utility_via_Adaptive_Clipping_on_Differentially_Private_Gradients_in_Federated_Meta-Learning,21_ACSAC-2022-Squeezing_More_Utility
+A Transformer-based Function Symbol Name Inference Model from an Assembly Language for Binary Reversing,"Hyunjin Kim,Jinyeong Bak,Kyunghyun Cho,Hyungjoon Koo",https://dl.acm.org/doi/pdf/10.1145/3579856.3582823,https://github.com/agwaBom/AsmDepictor,AsiaCCS,2023,0,1,1,"2, Zenodo",3/4/24,Python,,2,-1,,1,Institute of Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government (MSIT),-1,Missing data files for pre-trained model and need GPU for training the model from scratch,AsiaCCS-2023-A_Transformer-based_Function_Symbol_Name_Inference_Model_from_an_Assembly_Language_for_Binary_Reversing,22_AsiaCCS-2023-A_Transformer-based_Function
+Exploiting the Sensitivity of L2 Adversarial Examples to Erase-and-Restore,Zuo Fei and Zeng Qiang,https://dl.acm.org/doi/pdf/10.1145/3433210.3437529,https://github.com/quz105/Erase-and-Restore,AsiaCCS,2021,0,0,1,2,"Oct 29, 2020",Python,,1,3,,1,NSF,-1,"No python version
+no OS version
+All notebook files (converting to .py)
+Very minimal reproducibility text / instructions
+no dependencies listed
+
+Does not include scripts to generate data for 1 of two datasets that they use
+Only scripts they provide map to singular parts of different tables, thus partial match",AsiaCCS-2021-Exploiting_the_Sensitivity_of_L2_Adversarial_Examples_to_Erase-and-Restore,23_AsiaCCS-2021-Exploiting_the_Sensitivity
+DefWeb: Defending User Privacy against Cache-based Website Fingerprinting Attacks with Intelligent Noise Injection,"Seonghun, Son and Debopriya Roy, Dipta and Berk, Gulmezoglu",https://dl.acm.org/doi/pdf/10.1145/3627106.3627191,https://github.com/hunie-son/DefWeb,ACSAC,2023,0,2,"1,2",2,"Nov 10, 2023","HTML, Python",,1,-1,,0,N/A,"1,2","No dependencies listed
+No python version
+Code was deisgned to reproduce only a part of the results (only provided 2 of the 100 website fingerprints)",ACSAC-2023-DefWeb:_Defending_User_Privacy_against_Cache-based_Website_Fingerprinting_Attacks_with_Intelligent_Noise_Injection,24_ACSAC-2023-DefWeb_Defending_User
+FS3: Few-Shot and Self-Supervised Framework for Efficient Intrusion Detection in Internet of Things Networks,"Ayesha S., Dina and A.B., Siddique and D., Manivannan",https://dl.acm.org/doi/pdf/10.1145/3627106.3627193,https://github.com/MultifacetedIntrusionDetection/ID-FS3,ACSAC,2023,0,0,1,2,"Aug 3, 2023",Python,,2,-1,,1,N/A,-1,"no readme
+no  install instructions
+no main file
+Pointer to a hard coded csv file that is no where to be found",ACSAC-2023-FS3:_Few-Shot_and_Self-Supervised_Framework_for_Efficient_Intrusion_Detection_in_Internet_of_Things_Networks,25_ACSAC-2023-FS3_Few-Shot_and
+FLARE: Fingerprinting Deep Reinforcement Learning Agents using Universal Adversarial Masks,"A. Tekgul, Buse G. and N. Asokan",https://dl.acm.org/doi/pdf/10.1145/3627106.3627128,https://github.com/ssg-research/FLARE,ACSAC,2023,0,2,1,2,"Sep 22, 2023",Python,,0,2,,0,N/A,0,"Didn't finish running through their ""run everything"" script in 10 hours",ACSAC-2023-FLARE:_Fingerprinting_Deep_Reinforcement_Learning_Agents_using_Universal_Adversarial_Masks,26_ACSAC-2023-FLARE_Fingerprinting_Deep
+DF-SCA: Dynamic Frequency Side Channel Attacks are Practical,"Debopriya Roy Dipta, Berk Gulmezoglu",https://dl.acm.org/doi/pdf/10.1145/3564625.3567979,https://github.com/Diptakuet/DF-SCA-Dynamic-Frequency-Side-Channel-Attacks-are-Practical,ACSAC,2022,0,2,1,2,"Oct 4, 2022","Python, MATLAB",,0,1,,0,N/A,0,"No install instructions (python version and dependencies)
+selecting python 3.7 for testing
+
+scripts exist to run tests on pretrained models",ACSAC-2022-DF-SCA:_Dynamic_Frequency_Side_Channel_Attacks_are_Practical,27_ACSAC-2022-DF-SCA_Dynamic_Frequency
+Towards Enhanced EEG-based Authentication with Motor Imagery Brain-Computer Interface,"Bingkun Wu, Weizhi Meng, Wei-Yang Chiu",https://dl.acm.org/doi/pdf/10.1145/3564625.3564656,https://github.com/BKAUTO/EEG-Biometric,ACSAC,2022,1,1,1,2,"Mar 20, 2023",Python,,0,3,,1,N/A,-1,"missing dependencies
+Missing some matlab files
+could only reproduce a couple entries in Table 6, the code did not have anything for the other tables",ACSAC-2022-Towards_Enhanced_EEG-based_Authentication_with_Motor_Imagery_Brain-Computer_Interface,28_ACSAC-2022-Towards_Enhanced_EEG-based
+Morphence: Moving Target Defense Against Adversarial Examples,"Amich, Abderrahmen and Eshete, Birhanu",https://dl.acm.org/doi/pdf/10.1145/3485832.3485899,https://github.com/um-dsp/Morphence,ACSAC,2021,0,2,1,2,"Sep 14, 2022",Python,,0,0,,0,N/A,-1,"does not have a list of scripts that can be ran to generate the outputs given in the paper
+Give a script example that looks like it should generate values somewhere in Table 1 (FGSM row and Morphence column MNIST and CIFAR), but the final value of the output does not match this",ACSAC-2021-Morphence:_Moving_Target_Defense_Against_Adversarial_Examples,29_ACSAC-2021-Morphence_Moving_Target
+Two Souls in an Adversarial Image: Towards Universal Adversarial Example Detection using Multi-view Inconsistency,"Kiani, Sohaib and Awan, Sana and Lan, Chao and Li, Fengjun and Luo, Bo",https://dl.acm.org/doi/pdf/10.1145/3485832.3485904,https://github.com/sohaib730/Argos-Adversarial_Detection,ACSAC,2021,0,2,1,2,"Oct 19, 2021",Python,,1,2,,0,NSF,0,Need to download ~200GB in datasets that is going to take more than 10hours to download,ACSAC-2021-Two_Souls_in_an_Adversarial_Image:_Towards_Universal_Adversarial_Example_Detection_using_Multi-view_Inconsistency,30_ACSAC-2021-Two_Souls_in
+The Many-faced God: Attacking Face Verification System with Embedding and Image Recovery,"Tan, Mingtian and Zhou, Zhe and Li, Zhou",https://dl.acm.org/doi/pdf/10.1145/3485832.3485840,https://github.com/BennyTMT/DL_Privacy,ACSAC,2021,0,1,1,2,"Dec 3, 2021",Python,,2,-1,,1,"NSFC, NSF, Microsoft and Cisco.",-1,"no python version (randomly selecting 3.9.6)
+no OS version
+no dependencies
+well 3.9 didnt work, nor did 3.7. Now trying 3.6
+used some custom wrapper for tensorflow that they did not include",ACSAC-2021-The_Many-faced_God:_Attacking_Face_Verification_System_with_Embedding_and_Image_Recovery,31_ACSAC-2021-The_Many-faced_God
+Februus: Input Purification Defense Against Trojan Attacks on Deep Neural Network Systems,"Doan, Bao Gia; Abbasnejad, Ehsan; Ranasinghe, Damith C.",https://dl.acm.org/doi/pdf/10.1145/3427228.3427264,https://github.com/AdelaideAuto-IDLab/Februus,ACSAC,2020,0,2,1,2,"Mar 31, 2021",Python,,1,1,,0,N/A,0,"No python version (randomly selecting 3.8)
+",ACSAC-2020-Februus:_Input_Purification_Defense_Against_Trojan_Attacks_on_Deep_Neural_Network_Systems,32_ACSAC-2020-Februus_Input_Purification
+DeepSIM: GPS Spoofing Detection on UAVs using Satellite Imagery Matching,"Xue, Nian and Niu, Liang and Hong, Xianbin and Li, Zhen and Hoffaeller, Larissa and Pöpper, Christina",https://dl.acm.org/doi/pdf/10.1145/3427228.3427254,https://github.com/niuliang42/DeepSim,ACSAC,2020,1,2,"1,2",2,"Nov 15, 2020",Python,,0,3,,0,"Center for Cyber Security at New York University Abu Dhabi, ",0,"doesnt have a zip of the data used
+some of the code runs, one of the given scripts is missing a csv file thats not in their google drive
+Another error in one of their scripts that seems to be a declaration with variables issue (seems to be error tolerance experiments)
+The code that runs matches, so I only select partial match",ACSAC-2020-DeepSIM:_GPS_Spoofing_Detection_on_UAVs_using_Satellite_Imagery_Matching,33_ACSAC-2020-DeepSIM_GPS_Spoofing
+Evaluating Explanation Methods for Deep Learning in Computer Security,"Alexander Warnecke, Daniel Arp, Christian Wressnegger, Konrad Rieck",https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9230374,https://github.com/alewarne/explain-mlsec,EuroS&P,2020,0,1,1,2,"Jun 10, 2020",Python,,2,-1,,1,"German Federal Ministry of Education and Research, Deutsche Forschungsgemeinschaft",-1,"no python version, no OS version
+no install instructions
+no dependencies
+no scripts to run for results
+Also uses the drebin dataset which has a broken email address link for downloading
+Need to input myriad parameters into the python cli commands, but those are all unknown.",EuroS&P-2020-Evaluating_Explanation_Methods_for_Deep_Learning_in_Computer_Security,34_EuroSP-2020-Evaluating_Explanation_Methods
+They See Me Rollin’: Inherent Vulnerability of the Rolling Shutter in CMOS Image Sensors,"Sebastian Kohler,Giulio Lovisotto,Simon Birnbach,Richard Baker,Ivan Martinovic",https://dl.acm.org/doi/pdf/10.1145/3485832.3488016,https://github.com/ssloxford/they-see-me-rollin,ACSAC,2021,0,2,"1,2",2,"Oct 19, 2021","Python, HTML, Ruby, Javascript",DOCKER,,,,,"Mastercard, Engineering and Physical SciencesResearch Council",0,"Comes with a docker install, which cannot be done on hipergator",ACSAC-2021-They_See_Me_Rollin’:_Inherent_Vulnerability_of_the_Rolling_Shutter_in_CMOS_Image_Sensors,35_ACSAC-2021-They_See_Me
+Talek: Private Group Messaging with Hidden Access Patterns,"Cheng, Raymond and Scott, William and Masserova, Elisaweta and Zhang, Irene and Goyal, Vipul and Anderson, Thomas and Krishnamurthy, Arvind and Parno, Bryan",https://dl.acm.org/doi/pdf/10.1145/3427228.3427231,https://github.com/privacylab/talek,ACSAC,2020,1,1,1,2,"Mar 19, 2024",Go,DOCKER,,,,,"Google, the Alfred P. Sloan Foundation, and the CONIX Research Center, one of six centers in JUMP, a Semiconductor Research Corporation, DARPA and NIWC",-1,"Comes with a docker install, which cannot be done on hipergator",ACSAC-2020-Talek:_Private_Group_Messaging_with_Hidden_Access_Patterns,36_ACSAC-2020-Talek_Private_Group
+Co-evaluation of pattern matching algorithms on IoT devices with embedded GPUs,"Charalampos Stylianopoulos, Simon Kindström, Magnus Almgren, Olaf Landsiedel, Marina Papatriantafilou",https://dl.acm.org/doi/pdf/10.1145/3359789.3359811,https://bitbucket.org/mpastyl/acsac_pattern_matching_benchmark_opencl/src/master/,ACSAC,2019,0,2,"1,2",2,2019-09-18,C++,Needs Hardware,,,ODROID-XU3,0,"Swedish Civil Contingencies Agency, Swedish Foundation for Strategic Research, Swedish Research Council, European Community’s Horizon 2020 Framework Programme, Vinnova-funded project “KIDSAM”",0,Don't have the ODRIOD-XU3 device,ACSAC-2019-Co-evaluation_of_pattern_matching_algorithms_on_IoT_devices_with_embedded_GPUs,37_ACSAC-2019-Co-evaluation_of_pattern
+Can We Use Split Learning on 1D CNN Models for Privacy Preserving Training?,Sharif Abuadbba and Kyuyeon Kim and Minki Kim and Chandra Thapa and Seyit Camtepe A. and Gao Yansong Hyoungshick  Kim and Surya Nepal,https://dl.acm.org/doi/pdf/10.1145/3320269.3384740,https://github.com/SharifAbuadbba/split-learning-1D,AsiaCCS,2020,8,1,1,2,"Jan 23, 2024",Python,,2,-1,,1,"Australian Government’s Cooperative Research Centres Programme, ITRC support program",-1,"no dependencies
+weird gdrive downloads in notebook
+no python version (picking 3.7)
+cant download their preprossed models, because stuff was created and written in google colab and the connection/mounting with google drive is weird",AsiaCCS-2020-Can_We_Use_Split_Learning_on_1D_CNN_Models_for_Privacy_Preserving_Training?,38_AsiaCCS-2020-Can_We_Use
+How to prove your model belongs to you: a blind-watermark based framework to protect intellectual property of DNN,"Zheng Li, Chengyu Hu, Yang Zhang, Shanqing Guo",https://dl.acm.org/doi/pdf/10.1145/3359789.3359801,https://github.com/zhenglisec/Blind-Watermark-for-DNN,ACSAC,2019,1,1,1,2,"Jan 30, 2021",Python,,1,-1,,0,"National Natural Science Foundation of China, Key Science Technology Project of Shandong Province , Major Scientific and Technological Innovation Projects of Shandong Province China",-1,"Does not provide any pretrainde models or testing code
+Running their main.py on hpg
+The output of their main file does not line up with anything that I see in the paper
+It trained a model, but what to do with that after this is not specified and not alluded to in the paper",ACSAC-2019-How_to_prove_your_model_belongs_to_you:_a_blind-watermark_based_framework_to_protect_intellectual_property_of_DNN,39_ACSAC-2019-How_to_prove
+Modelling direct messaging networks with multiple recipients for cyber deception,"Kristen Moore, Cody James Christopher, David Liebowitz, Surya Nepal, Renee Selvey",https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9797379,https://bitbucket.csiro.au/projects/DECAAS/repos/emailgen/browse,EuroS&P,2022,1,2,1,2,11/23/2022,Python,,3,-1,,0,N/A,-1,"so many dependency issues with their conda yml
+fixing that, they then had missing dependencies entirely
+fixing that they had a missing nlp model that needed to be searched for and downloaded
+fixing that their version of python and listed pytorch were incompatible with the functions used in the program
+ran out of 1 hour time",EuroS&P-2022-Modelling_direct_messaging_networks_with_multiple_recipients_for_cyber_deception,40_EuroSP-2022-Modelling_direct_messaging
+Neurlux: dynamic malware analysis without feature engineering,"Jindal, Chani and Salls, Christopher and Aghakhani, Hojjat and Long, Keith and Kruegel, Christopher and Vigna, Giovanni",https://dl.acm.org/doi/pdf/10.1145/3359789.3359835,https://github.com/ucsb-seclab/Neurlux,ACSAC,2019,0,0,1,2,"Dec 26, 2020",Python,,2,-1,,1,"Intel, NSF, DARPA, ",-1,"Does not include any reproduce steps at all
+does not include a main file
+no python version (randomly selecting 3.7)
+neuralnet dependency does not exist (maybe its a custom file they did not include)",ACSAC-2019-Neurlux:_dynamic_malware_analysis_without_feature_engineering,41_ACSAC-2019-Neurlux_dynamic_malware
+Model inversion attacks against collaborative inference,"Zecheng He, Tianwei Zhang, Ruby B. Lee",https://dl.acm.org/doi/pdf/10.1145/3359789.3359824,https://github.com/zechenghe/Inverse_Collaborative_Inference,ACSAC,2019,0,1,1,2,"Aug 27, 2021",Python,,3,-1,,0,N/A,0,"Does not provide a pretrained model
+Running through all the scripts they gave gives cryptic errors with pytorch
+searching these errors used up my 1hour time",ACSAC-2019-Model_inversion_attacks_against_collaborative_inference,42_ACSAC-2019-Model_inversion_attacks
+STRIP: a defence against trojan attacks on deep neural networks,"Yansong Gao, Change Xu, Derui Wang, Shiping Chen, Damith C. Ranasinghe, Surya Nepal",https://dl.acm.org/doi/pdf/10.1145/3359789.3359790,https://github.com/garrisongys/STRIP,ACSAC,2019,1,0,1,2,"Oct 7, 2019",Python,hpg,1,,,0,NJUST Research Start-Up,1,"No instructions in readme
+randomly selecting python 3.7",ACSAC-2019-STRIP:_a_defence_against_trojan_attacks_on_deep_neural_networks,43_ACSAC-2019-STRIP_a_defence
+A First Look at Toxicity Injection Attacks on Open-domain Chatbots,"Weeks, Connor and Cheruvu, Aravind and Abdullah, Sifat Muhammad and Kanchi, Shravya and Yao, Daphne and Viswanath, Bimal",https://dl.acm.org/doi/pdf/10.1145/3627106.3627122,https://github.com/secml-lab-vt/Chatbot-Toxicity-Injection,ACSAC,2023,0,2,1,2,13/03/2024,Python,,-1,-1,,1,"NSF grant 2231002 and the Commonwealth Cyber Initiative, 
+an investment in the advancement of cyber R&D, innovation, 
+and workforce development",,,ACSAC-2023-A_First_Look_at_Toxicity_Injection_Attacks_on_Open-domain_Chatbots,44_ACSAC-2023-A_First_Look
+Secure Softmax/Sigmoid for Machine-learning Computation,"Zheng, Yu and Zhang, Qizhi and Chow, Sherman S. M. and Peng, Yuxiang and Tan, Sijun and Li, Lichun and Yin, Shan",https://dl.acm.org/doi/pdf/10.1145/3627106.3627175,https://github.com/alipay/Antchain-MPC/tree/sec_softmoid,ACSAC,2023,1,2,1,2,"Dec 26, 2023","Python, Terra",DOCKER,5,-1,,0,General Research Fund Research Grants Council,"1,2","Requires docker, which cannot be done on hipergator",ACSAC-2023-Secure_Softmax/Sigmoid_for_Machine-learning_Computation,45_ACSAC-2023-Secure_SoftmaxSigmoid_for
+DeepTaster: Adversarial Perturbation-Based Fingerprinting to Identify Proprietary Dataset Use in Deep Neural Networks,"Park, Seonhye and Abuadbba, Alsharif and Wang, Shuo and Moore, Kristen and Gao, Yansong and Kim, Hyoungshick and Nepal, Surya",https://dl.acm.org/doi/pdf/10.1145/3627106.3627204,https://github.com/qkrtjsgp08/DeepTaster,ACSAC,2023,8,2,1,2,"Jan 24, 2024",Python,,1,2,,0,"Institute for Information & communication Technology Planning & Evaluation, Development of HighAssurance, Secure Microkernel ",1,Ran out of tim,ACSAC-2023-DeepTaster:_Adversarial_Perturbation-Based_Fingerprinting_to_Identify_Proprietary_Dataset_Use_in_Deep_Neural_Networks,46_ACSAC-2023-DeepTaster_Adversarial_Perturbation-Based
+From Attachments to SEO: Click Here to Learn More about Clickbait PDFs!,"Stivala, Giada and Abdelnabi, Sahar and Mengascini, Andrea and Graziano, Mariano and Fritz, Mario and Pellegrino, Giancarlo",https://dl.acm.org/doi/pdf/10.1145/3627106.3627172,https://www.kaggle.com/datasets/emerald101/from-attachments-to-seo,ACSAC,2023,8,1,1,2,10/02/2023,Jupyter Notebook,GPU,5,-1,GPU,0,N/A,"1,2",,,
+,,,,,,,,,,,,,,,,,,,,--,#REF!
+,,,,,,,,,,,,,,,,,,,,--,#REF!
+,,,,,,,,,,,,,,,,,,,,--,#REF!
+,,,,,,,,,,,,,,,,,,,,--,#REF!
+,,,,,,,,,,,,,,,,,,,,--,#REF!
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,
+,,,,,,,,,,,,,,,,,,,,--,

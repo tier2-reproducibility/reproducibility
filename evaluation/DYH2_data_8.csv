@@ -1,0 +1,68 @@
+Paper Title,Author,,Link to Paper,Link for Code,Conference,Year,Author Affiliation,ReadMe,Type,Available,Last Modified,Language,Evaluate Later,Compiles,Output Matches,Hardware,Made for Reproducibility,Funding,Artifact Evaluation,Comments
+Mostree: Malicious Secure Private Decision Tree Evaluation with Sublinear Communication,"Bai, Jianli and Song, Xiangfu and Zhang, Xiaowu and Wang, Qifan and Cui, Shujie and Chang, Ee-Chien and Russello, Giovanni",ACSAC-2023-Mostree:_Malicious_Secure_Private_Decision_Tree_Evaluation_with_Sublinear_Communication,https://dl.acm.org/doi/pdf/10.1145/3627106.3627131,https://github.com/Jbai795/Mostree-pub,ACSAC,2023,1,2,"1,3",2,"Sep 23, 2023","C, C++, Python, Shell",,0,3,,-1,"MBIE,NSF,Singapore",1,"Has a script to run for ""offline"" testing, but no offline testing numbers in the paper to compare to. There is a graph, but nothing numerical.
+Installing all dependencies took a couple hours
+following their instructions, and using the anonymous reviewer's docker both compiled
+Some of the outputs matched, some didnt."
+Mitigating Membership Inference Attacks via Weighted Smoothing,"Tan, Mingtian and Xie, Xiaofei and Sun, Jun and Wang, Tianhao",ACSAC-2023-Mitigating_Membership_Inference_Attacks_via_Weighted_Smoothing,https://dl.acm.org/doi/pdf/10.1145/3627106.3627189,https://github.com/BennyTMT/weighted-smoothing,ACSAC,2023,0,1,"0,1",2,"Nov 8, 2023","Python, Shell",,2,-1,,1,NSF,-1,"Has a ""run.sh"" script, but no output on the github.
+Also ""Detailed introduction and code will be provided in the future. Stay tuned for more comprehensive resources and updates.""
+Also ""Note that most datasets, such as Location30, Texas100, FACE, or HAM10000, are not available for download via official PyTorch channels. You will need to set up your data formats for successful execution.""
+DOES NOT HAVE ANY DEPENDENCY INSTALL STEPS
+Missing a custom dataset loader function (loadCifar10)
+Does not specify OS version"
+Uncovering Vulnerabilities of Bluetooth Low Energy IoT from Companion Mobile Apps with Ble-Guuide,"Pallavi Sivakumaran,Chaoshun Zuo,Zhiqiang Lin,Jorge Blasco",AsiaCCS-2023-Uncovering_Vulnerabilities_of_Bluetooth_Low_Energy_IoT_from_Companion_Mobile_Apps_with_Ble-Guuide,https://dl.acm.org/doi/pdf/10.1145/3579856.3595806,https://github.com/projectbtle/BLE-GUUIDE,AsiaCCS,2023,0,2,1,2,"Mar 29, 2021",Python,,2,-1,,1,"Engineering and Physical Sciences Research Council (EPSRC),UK government as
+part of the Centre for Doctoral Training in Cyber Security at Royal
+Holloway,",-1,"Requires a 3rd party code base (that requires access request per email) that then needs to be modified to work
+Does not have any data to run the code with
+Does no specifiy OS version
+Had to remove ""re"" from requirements.txt
+Installing the nltk python package breaks when installing dependency ""Frida""
+Tried installing frida manually from the PyPI following instructions (which made me download something from a github) and still couldnt get this installed"
+aaeCAPTCHA: The Design and Implementation of Audio Adversarial CAPTCHA,"Md Imran Hossen, Xiali Hei",EuroS&P-2022-aaeCAPTCHA:_The_Design_and_Implementation_of_Audio_Adversarial_CAPTCHA,https://www.computer.org/csdl/pds/api/csdl/proceedings/download-article/1ErpCSJepsQ/pdf,https://github.com/i-hossen/aaeCaptcha,EuroS&P,2022,0,2,"1,2",2,"Mar 14, 2022","Python, Shell",,2,-1,GPU,0,NSF,-1,"Had to remove a package from the given dockerfile (was causing a conflict and no other version of that package are available)
+This requires a GPU, tried running it without one and it doesn't seem to work. Had to start the docker without the ""--gpus all"" switch, but then it fails cause torch is built for GPUs only. Does not have the CPU torch installed.
+Went over the 1 hr time limit"
+LDL: A Defense for Label-Based Membership Inference Attacks,"Arezoo Rajabi,Dinuka Sahabandu,Luyao Niu,Bhaskar Ramasubramanian,Radha Poovendran",AsiaCCS-2023-LDL:_A_Defense_for_Label-Based_Membership_Inference_Attacks,https://dl.acm.org/doi/pdf/10.1145/3579856.3582821,https://github.com/rajabia/LDL-A-Defense-for-Label-Based-Membership-Inference-Attacks,AsiaCCS,2023,0,1,"0,1",2,"Dec 16, 2022",Python,,2,-1,GPU,1,"NSF, ONR",-1,"No OS version. No dependencies. No python version.
+Had to keep running the python script and installing the ""next"" missing dependency.
+Installed python 3.8 ended up finding it needed python 3.9.
+Installed Torch and it said that no GPUs were found (which is correct). So then I found a command in their main.py file to install a different cpu version of torch, and when installing that it breaks other dependencies that google is not helping with.
+Met 1 hr time limit"
+Implementing and Optimizing Matrix Triples with Homomorphic Encryption,"Johannes Mono,Tim Güneysu",AsiaCCS-2023-Implementing_and_Optimizing_Matrix_Triples_with_Homomorphic Encryption,https://dl.acm.org/doi/pdf/10.1145/3579856.3590344,https://github.com/Crypto-TII/mat3,AsiaCCS,2023,1,1,1,2,"Jun 9, 2023","C, C++, Python, Shell",,"0,2",-1,,1,"Deutsche Forschungsgemeinschaft (DFG, German Research Foundation),Cryptography Research Center at Technology
+Innovation Institute (TII),",-1,"No OS version on github, but found os version in the paper (ubuntu 18.04) after I already chose ubuntu 20.04. Code compiled regardless.
+Paper states hyper-specific hardware test case (cpu/cache sizes/memory, etc)
+Compiled under normal build conditions, did not compile when specifying to build benchmarking (missing a custom benchmarking file)
+Output of test script under normal build conditions gives no numbers, nor does it create an output file."
+Common Evaluation Pitfalls in Touch-Based Authentication Systems,Georgiev Martin and Eberz Simon and Turner Henry and Lovisotto Giulio and Martinovic Ivan,AsiaCCS-2022-Common_Evaluation_Pitfalls_in_Touch-Based_Authentication_Systems,dl.acm.org/doi/pdf/10.1145/3488932.3517388,https://github.com/ssloxford/evaluation-pitfalls-touch,AsiaCCS,2022,0,1,"1,2",2,"Feb 16, 2022","Python, Swift",,1,3,,0,"Mastercard, Engineering and Physical Sciences Research Council",-1,"No OS version specified
+Does not have instructions for what to do with the output from code
+Has many code files, but no direction on how to run them and what the parameters do
+Ran some of the code with no issue, did not have time to run every piece of code
+Picked 2 phone from Table 2 in the P2 section and verified the output from there (via a custom CSV parseing script I wrote)
+Picked one file from each of the P1-P5 and none of them finished running, nor gave updates on status (20 hours)"
+ENIDrift: A Fast and Adaptive Ensemble System for Network Intrusion Detection under Real-world Drift,Xian Wang,ACSAC-2022-ENIDrift:_A_Fast_and_Adaptive_Ensemble_System_for_Network_Intrusion_Detection_under_Real-world_Drift,https://dl.acm.org/doi/pdf/10.1145/3564625.3567992,https://github.com/X1anWang/ENIDrift-Artifact,ACSAC,2022,0,2,"1,2",2,"Feb 22, 2023",Python,,0,2,,0,N/A,0,"No OS specified.
+Missing depenency. Installing latest version broke the code. Had to find a dependency match for it, but code worked after that.
+README states that it should take 30 minutes to run. I let it run overnight and it did not complete."
+Drone Authentication via Acoustic Fingerprint,"Yufeng Diao, Yichi Zhang, Guodong Zhao, Mohamed Khamis",ACSAC-2022-Drone_Authentication_via_Acoustic_Fingerprint,https://dl.acm.org/doi/pdf/10.1145/3564625.3564653,https://github.com/Yufeng-Diao/Drone-Authentication-via-Acoustic-Fingerprint,ACSAC,2022,0,2,"1,2",2,"Oct 10, 2022",Python,,0,-1,,0,N/A,1,"States platform is windows, but ""Ubuntu 20.04 may be fine"" (we're testing on 20.04)
+Missing dependency (pyyaml)
+Running the first part of their script ""./dataset_build/pkl_gen_timeVar.py"" gives a file not found error
+It seems that the extracting of features from the .wav files is not happening correctly. The location it's looking for for .pkl feats files is not there even though it says extracting success"
+Curiosity-Driven and Victim-Aware Adversarial Policies,"Chen Gong, Zhou Yang, Yunpeng Bai, Jieke Shi, Arunesh Sinha, Bowen Xu, David Lo, Xinwen Hou, Guoliang Fan",ACSAC-2022-Curiosity-Driven_and_Victim-Aware_Adversarial_Policies,https://dl.acm.org/doi/pdf/10.1145/3564625.3564636,https://github.com/soarsmu/Curiosity_in_Adversarial_Policy,ACSAC,2022,1,2,1,2,"Oct 3, 2022","Python, Shell",,"1,2",2,,0,"NSF, Singapore and DSO National Laboratories, National Key Research and Development Program of China,  National Foundation Fund of China",0,"Does not state OS/version
+Missing pyparsing dependency for MuJo Co
+Does not include parameters in the ""evaluate"" script, so cannot replicate
+
+Does not state python version for Starcraft 2
+Could only get the Starcraft2 code to compile. The MuJo Co games was hanging on the conda install of open-cv (5+ hours)
+didnt finish running"
+Formal Modeling and Security Analysis for Intra-level Privilege Separation,"Yinggang Guo, Zicheng Wang, Bingnan Zhong, Qingkai Zeng",ACSAC-2022-Formal_Modeling_and_Security_Analysis_for_Intra-level_Privilege_Separation,https://dl.acm.org/doi/pdf/10.1145/3564625.3567984,https://github.com/gyg128/Privilege-Centric-Model,ACSAC,2022,0,2,"1,3",2,"Jul 15, 2023",Shell,,0,1,,0,NSF of China,1,"Couldnt generate data for Table 5 (Looks like the code from the provided docker image was not updated)
+./model_check.sh is supposed to take a couple other parameters to build table 5, but they are missing"
+SoK: Enabling Security Analyses of Embedded Systems via Rehosting,Fasano Andrew and Ballo Tiemoko and Muench Marius and Leek Tim and Bulekov Alexander and Dolan-Gavitt Brendan and Egele Manuel and Francillon Aur\'{e,AsiaCCS-2021-SoK:_Enabling_Security_Analyses_of_Embedded_Systems_via_Rehosting,https://dl.acm.org/doi/pdf/10.1145/3433210.3453093,https://github.com/rehosting/rehosting_sok,AsiaCCS,2021,1,2,1,2,"Jun 8, 2021",Python,,0,1,,0,"ONR, NSF, Siemens AG, Under Secretary of Defense for Research and Engineering under Air Force",-1,
+FastSpec: Scalable Generation and Detection of Spectre Gadgets Using Neural Embeddings,"M. Caner Tol,Berk Gulmezoglu,Koray Yurtseven,Berk Sunar",EuroS&P-2021-FastSpec:_Scalable_Generation_and_Detection_of_Spectre_Gadgets_Using_Neural_Embeddings,https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9581258,https://github.com/vernamlab/FastSpec,EuroS&P,2021,0,1,"1,2,3",2,"Apr 12, 2023","Assembly, Python, Shell",,0,-1,,1,"NSF, Intel Corporation",-1,"No OS/version specified
+No python version specified
+Missing dependencies
+Dependency clash with specified dependencies (tensorflow functions missing), attempted to fix, but ran out of time.
+Also looks like there is a missing custom .tsv"
+Bullseye Polytope: A Scalable Clean-Label Poisoning Attack with Improved Transferability,"Hojjat Aghakhani,Dongyu Meng,Yu-Xiang Wang,Christopher Kruegel,Giovanni Vigna",EuroS&P-2021-Bullseye_Polytope:_A_Scalable_Clean-Label_Poisoning_Attack_with_Improved_Transferability,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9581207,"https://github.com/ucsb-seclab/BullseyePoison
+https://github.com/ucsb-seclab/BullseyePoison/tree/master/Multi-Target-Mode",EuroS&P,2021,0,2,"1,2",2,"Nov 5, 2020","Python, Shell",,2,-1,GPU,0,"DARPA, Intel Corp, Amazon Machine Learning Research Awards program, Nvidia Corp",-1,"No OS/version specified
+No python version specified
+Missing dependencies
+does not give expected output of scripts, or a mapping of outputs to paper results
+No version of torch (1.3.1) could be found to download
+Issues with torchvision.datasets.CIFAR10 and SSL certs breaking code (turning off SSL in the code works, but sketchy)
+Errors out directly after that, cant find a .pth file it's looking for"
