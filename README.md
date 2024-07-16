@@ -70,7 +70,7 @@
 4. ***tier1.csv:*** This file contains USENIX (Tier 1 Security Conferences) data from previous work required to visualize Figure 6 in our paper.
 ## Scripts
 Scripts used for analyses and figures are located in the ***scripts*** folder. All scripts for creating figures use ***Python 3.9.13*** and require changing the file/folder paths:
-1. *dyh2_figures_4_and_6.ipynb:* This Jupyter Notebook script contains the codes to reproduce Figure 4 and Figure 6 in the paper.
+1. *figures_4_and_6.ipynb:* This Jupyter Notebook script contains the codes to reproduce Figure 4 and Figure 6 in the paper.
    - The following packages are used run this code:
      ```
      matplotlib==3.5.2
@@ -80,7 +80,7 @@ Scripts used for analyses and figures are located in the ***scripts*** folder. A
      plotly_express==0.4.1
      seaborn==0.11.2
      ```
-2. *dyh_2_coxcombs.ipynb:* This script reproduces Figure 2 and Figure 3 from the paper.
+2. *coxcombs.ipynb:* This script reproduces Figure 2 and Figure 3 from the paper.
    - Packages required to run the script:
      ```
      matplotlib==3.5.2
