@@ -5,13 +5,13 @@
 ## Data
 1. ***conf*** folder: contains data of all four Tier 2 Security conferences (ACSAC, Asia CCS, Euro S&P, and WiSec), with the following rows:
    1. *Conference*: The conference that the paper was accepted at.
-   2. *Year*: The year that paper was published.
+   2. *Year*: The year that the paper was published.
    3. *Title*: The title of the paper.
    4. *Authors*: Authors of the paper.
    5. *PDF Link*: Link to the PDF version of the paper.
    6. *Code*: Link to the repository for code directly associated with the paper.
 2. ***evaluation*** folder: contains the data of indirect and direct study:
-   1. *Author Affiliation*:
+   1. *Author Affiliation:*
       - 0: Academic
       - 1: Mainly Academic
       - 2: Mainly Industry
@@ -19,47 +19,47 @@
       - 5: Federal Agency
       - 6: 50/50 split (i.e., 1/2 Academic, 1/2 Industry)
       - 7: Independent Researcher
-   2. *ReadMe*:
+   2. *ReadMe:*
       - -1: N/A
       - 0: Name
       - 1: Mediocre ReadMe
       - 2: Good ReadMe
-   3. *Type*:
+   3. *Type:*
       - 0: Tool/Package
       - 1: Repository
       - 2: Data (only data is available)
       - 3: Demonstration (photos, videos, supplementary materials available)
       - 4: Code (only code available, no data)
       - 5: No Code and No Data
-   4. *Available*:
+   4. *Available:*
       - -1: N/A
       - 0: School Website
       - 1: Personal Website
       - 2: Open Source Repository (GitHub, Google Drive/Site, GitLab, etc.)
       - 3: Request Access
-   5. *Last Modified*:
+   5. *Last Modified:*
       - Date of last commit/modification (MM/DD/YYYY)
-   6. *Language*:
+   6. *Language:*
       - Free response (Python, C, Java, etc.)
-   7. *Compiles*:
+   7. *Compiles:*
       - -1: N/A
       - 0: Compiles Right Away (No need to edit/modify code to compile the repo)
       - 1: Compiles After Edits (Edits in file structure/variables to get the code to run)
       - 2: Doesn't Run (Doesn't compile even after edits)
       - 3: Ran and Does Not Compile (requires extra components/hardware (i.e., GPU, phone, raspberry pi, etc. not explicitly mentioned in repo/paper.)
       - 4: Not Ran (requires extra components/hardware explicitly mentioned in paper/repo.)
-   8. *Output Matches*:
+   8. *Output Matches:*
       - -1: Does Not Match (A tool/repo not designed/made for reproducibility)
       - 0: Output Does Not Match (Output is +/-10% difference compared to claims of paper.)
       - 1: Output Matches (Best Effort, output is within +/-10% difference compared to claims of paper.)
-   9. *Hardware*:
+   9. *Hardware:*
        - Free Response, lists extra hardware required in order to reproduce.
-   10. *Made for Reproducibility*:
+   10. *Made for Reproducibility:*
        - 0: For reproducibility.
        - 1: Not For Reproducibility.
-   11. *Funding*:
+   11. *Funding:*
        - Free Response, lists the biggest/first agency name in the Acknowledgements section of the paper.
-   12. *Artifact Evaluation*:
+   12. *Artifact Evaluation:*
        - -1: Not Submitted to AEC.
        - 0: Artifact Evaluated Functional Badge.
        - 1: Artifact Evaluated Reusable Badge.
@@ -67,6 +67,7 @@
        - 3: Artifact Replicated Badge.
        - 4: Artifact Available Badge.
 3. ***full*** folder: contains merged rows from data in ***evaluation*** folder for executing Coxcomb graphs.
+4. ***DYH - Papers - Research Questions.csv:*** This file contains USENIX (Tier 1 Security Conferences) data from previous work required to visualize Figure 6 in our paper.
 ## Scripts
 Scripts used for analyses and figures are located in the ***scripts*** folder. All scripts for creating figures use ***Python 3.9.13***:
 1. *dyh2_figures_4_and_6.ipynb*: This Jupyter Notebook script contains the codes to reproduce Figure 4 and Figure 6 in the paper.
