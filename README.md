@@ -17,15 +17,51 @@
       - 5: Federal Agency
       - 6: 50/50 split (i.e., 1/2 Academic, 1/2 Industry)
       - 7: Independent Researcher
-   3. *ReadMe*:
-   4. *Type*:
-   5. *Available*:
-   6. *Last Modified*:
-   7. *Language*:
-   8. *Compiles*:
-   9. *Output Matches*:
-   10. *Hardware*:
-   11. *Made for Reproducibility*:
-   12. *Funding*:
-   13. *Artifact Evaluation*:
+   2. *ReadMe*:
+      - -1: N/A
+      - 0: Name
+      - 1: Mediocre ReadMe
+      - 2: Good ReadMe
+   3. *Type*:
+      - 0: Tool/Package
+      - 1: Repository
+      - 2: Data (only data is available)
+      - 3: Demonstration (photos, videos, supplementary materials available)
+      - 4: Code (only code available, no data)
+      - 5: No Code and No Data
+   4. *Available*:
+      - -1: N/A
+      - 0: School Website
+      - 1: Personal Website
+      - 2: Open Source Repository (GitHub, Google Drive/Site, GitLab, etc.)
+      - 3: Request Access
+   5. *Last Modified*:
+      - Date of last commit/modification (MM/DD/YYYY)
+   6. *Language*:
+      - Free response (Python, C, Java, etc.)
+   7. *Compiles*:
+      - -1: N/A
+      - 0: Compiles Right Away (No need to edit/modify code to compile the repo)
+      - 1: Compiles After Edits (Edits in file structure/variables to get the code to run)
+      - 2: Doesn't Run (Doesn't compile even after edits)
+      - 3: Ran and Does Not Compile (requires extra components/hardware (i.e., GPU, phone, raspberry pi, etc. not explicitly mentioned in repo/paper.)
+      - 4: Not Ran (requires extra components/hardware explicitly mentioned in paper/repo.)
+   8. *Output Matches*:
+      - -1: Does Not Match (A tool/repo not designed/made for reproducibility)
+      - 0: Output Does Not Match (Output is +/-10% difference compared to claims of paper.)
+      - 1: Output Matches (Best Effort, output is within +/-10% difference compared to claims of paper.)
+   9. *Hardware*:
+       - Free Response, lists extra hardware required in order to reproduce.
+   10. *Made for Reproducibility*:
+       - 0: For reproducibility.
+       - 1: Not For Reproducibility.
+   11. *Funding*:
+       - Free Response, lists the biggest/first agency name in the Acknowledgements section of the paper.
+   12. *Artifact Evaluation*:
+       - -1: Not Submitted to AEC.
+       - 0: Artifact Evaluated Functional Badge.
+       - 1: Artifact Evaluated Reusable Badge.
+       - 2: Artifact Reproduced Badge.
+       - 3: Artifact Replicated Badge.
+       - 4: Artifact Available Badge.
 ## Scripts
