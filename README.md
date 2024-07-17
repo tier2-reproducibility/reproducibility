@@ -114,7 +114,7 @@ Scripts used for analyses and figures are located in the ***scripts*** folder. T
 1. Install the requirements listed above for each script (scripts were created using ***Python 3.9.13***).
 2. Download data and scripts using the command (in a terminal):
    ```
-    git clone https://github.com/reproducibility-sec/reproducibility.git
+    https://github.com/tier2-reproducibility/reproducibility.git
    ```
 3. Modify the *PATH* variable(s) in each script to match your own local file path.
 4. Run each cell (in order) for each script by starting a Jupyter Notebook session with ```jupyter notebook``` and selecting the script you would like to run in the [***scripts***](scripts) folder (i.e., *coxcombs.ipynb*).
