@@ -102,6 +102,12 @@ Scripts used for analyses and figures are located in the ***scripts*** folder. T
      pandas==1.4.4
      ```
    - *This figure may vary slightly for Funding Agency labels with a count <= 3, due to the number of Funding Agencies with equal counts.*
+4. *figure_9.ipynb:* Reproduces Figure 9 from the paper (Code Compiles by Affiliation).
+   - Packages required to run this script:
+     ```
+     numpy==1.23.5
+     pandas==1.4.4
+     ```
 
 <a id="reproduce_steps"></a>  
 ## Steps to Reproduce
