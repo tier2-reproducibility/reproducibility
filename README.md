@@ -72,6 +72,7 @@
        - 4: Artifact Available Badge
 3. ***full*** folder: contains merged rows from data in ***evaluation*** folder for executing Coxcomb graphs.
 4. ***tier1.csv:*** This file contains USENIX Security (Tier 1 Security Conferences) data from previous work required to visualize Figure 6 in our paper.
+5. ***emails.pickle:*** Pickle file containing PDF naming schemes and associated email extensions of authors from each paper. Required to visualize Figure 9 in the paper.
    
 ## Scripts
 Scripts used for analyses and figures are located in the ***scripts*** folder. To reproduce our figures, please run all cells in order after satisfying all dependency requirements listed below. All scripts for creating figures use ***Python 3.9.13*** and require changing the file/folder paths (Areas where file *PATH* must be changed/added are written in **bold** or commented within each script):
