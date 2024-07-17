@@ -3,8 +3,7 @@
 - [Data](#Data)
 - [Scripts](#Scripts)
 - [Docker](#Docker)
-- [Embeddings](#Embeddings)
-- [Clustering](#Clustering)
+- [Embeddings and Clustering](#embeddings_clustering)
 ## Data
 1. ***conf*** folder: contains data of all four Tier 2 Security conferences (ACSAC, Asia CCS, Euro S&P, and WiSec), with the following rows:
    1. *Conference*: The conference that the paper was accepted at
@@ -101,6 +100,5 @@ Scripts used for analyses and figures are located in the ***scripts*** folder. T
    - *This figure may vary slightly for Funding Agency labels with a count <= 3, due to the number of Funding Agencies with equal counts.*
 ## Docker
 
-## Embeddings
-
-## Clustering
+<a id="embeddings_clustering"></a>
+## Embeddings and Clustering
