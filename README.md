@@ -2,6 +2,7 @@
 ## Table of Contents
 - [Data](#Data)
 - [Scripts](#Scripts)
+- [Steps to Reproduce](#reproduce_steps)
 - [Docker](#Docker)
 - [Embeddings and Clustering](#embeddings_clustering)
 ## Data
@@ -98,6 +99,15 @@ Scripts used for analyses and figures are located in the ***scripts*** folder. T
      pandas==1.4.4
      ```
    - *This figure may vary slightly for Funding Agency labels with a count <= 3, due to the number of Funding Agencies with equal counts.*
+
+<a id="reproduce_steps"></a>  
+## Steps to Reproduce
+1. Install the requirements listed above for each script.
+2. Download data and scripts using the command (in a terminal):
+   ```
+    git clone https://github.com/reproducibility-sec/reproducibility.git
+   ```
+3. Run each cell in order for each script.
 ## Docker
 
 <a id="embeddings_clustering"></a>
