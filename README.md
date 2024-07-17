@@ -5,8 +5,9 @@
 - [Steps to Reproduce](#reproduce_steps)
 - [Docker](#Docker)
 - [Embeddings and Clustering](#embeddings_clustering)
+  
 ## Data
-1. ***conf*** folder: contains data of all four Tier 2 Security conferences (ACSAC, Asia CCS, Euro S&P, and WiSec), with the following rows:
+1. ***conf*** folder: contains data of all four Tier 2 Security conferences (ACSAC, AsiaCCS, EuroS&P, and WiSec), with the following rows:
    1. *Conference*: The conference that the paper was accepted at
    2. *Year*: The year that the paper was published
    3. *Title*: The title of the paper
@@ -20,7 +21,7 @@
       - 2: Mainly Industry
       - 4: National Lab
       - 5: Federal Agency
-      - 6: 50/50 split (i.e., 1/2 Academic, 1/2 Industry)
+      - 6: 50/50 split (1/2 Academic, 1/2 Industry)
       - 7: Independent Researcher
    2. *ReadMe:*
       - -1: N/A
@@ -29,11 +30,11 @@
       - 2: Good ReadMe
    3. *Type:*
       - 0: Tool/Package
-      - 1: Repository
-      - 2: Data (only data is available)
+      - 1: Repository (data AND code)
+      - 2: Data (ONLY data is available)
       - 3: Demonstration (photos, videos, supplementary materials available)
-      - 4: Code (only code available, no data)
-      - 5: No Code and No Data
+      - 4: Code (ONLY code available, no data)
+      - 5: No Code and No Data (empty repo)
    4. *Available:*
       - -1: N/A
       - 0: School Website
@@ -48,7 +49,7 @@
       - -1: N/A
       - 0: Compiles Right Away (No need to edit/modify code to compile the repo)
       - 1: Compiles After Edits (Edits in file structure/variables to get the code to run)
-      - 2: Doesn't Run (Doesn't compile even after edits)
+      - 2: Doesn't Run (Does not compile even after edits)
       - 3: Ran and Does Not Compile (requires extra components/hardware (i.e., GPU, phone, Raspberry Pi, etc. not explicitly mentioned in repo/paper)
       - 4: Not Ran (requires extra components/hardware explicitly mentioned in paper/repo)
    8. *Output Matches:*
@@ -56,7 +57,7 @@
       - 0: Output Does Not Match (Output is +/-10% difference compared to claims of paper.)
       - 1: Output Matches (Best Effort, the output is within +/-10% difference compared to claims of paper)
    9. *Hardware:*
-       - Free Response, list of extra hardware required in order to reproduce
+       - Free Response, list of extra hardware required to reproduce
    10. *Made for Reproducibility:*
        - 0: For Reproducibility
        - 1: Not For Reproducibility
@@ -71,6 +72,7 @@
        - 4: Artifact Available Badge
 3. ***full*** folder: contains merged rows from data in ***evaluation*** folder for executing Coxcomb graphs.
 4. ***tier1.csv:*** This file contains USENIX Security (Tier 1 Security Conferences) data from previous work required to visualize Figure 6 in our paper.
+   
 ## Scripts
 Scripts used for analyses and figures are located in the ***scripts*** folder. To reproduce our figures, please run all cells in order after satisfying all dependency requirements listed below. All scripts for creating figures use ***Python 3.9.13*** and require changing the file/folder paths (Areas where file *PATH* must be changed/added are written in **bold** or commented within each script):
 1. *figures_4_and_6.ipynb:* This Jupyter Notebook script contains the codes to reproduce Figure 4 (Papers with Code by Year) and Figure 6 (Code Compiles by Conference) in the paper.
@@ -102,12 +104,14 @@ Scripts used for analyses and figures are located in the ***scripts*** folder. T
 
 <a id="reproduce_steps"></a>  
 ## Steps to Reproduce
-1. Install the requirements listed above for each script.
+1. Install the requirements listed above for each script (scripts were created using ***Python 3.9.13***).
 2. Download data and scripts using the command (in a terminal):
    ```
     git clone https://github.com/reproducibility-sec/reproducibility.git
    ```
-3. Run each cell in order for each script by starting a Jupyter Notebook session with ```jupyter notebook``` and selecting the script you want to run in the ```scripts``` folder (i.e., *coxcombs.ipynb*).
+3. Modify the *PATH* variable(s) in each script to match your own local file path.
+4. Run each cell (in order) for each script by starting a Jupyter Notebook session with ```jupyter notebook``` and selecting the script you would like to run in the ```scripts``` folder (i.e., *coxcombs.ipynb*).
+
 ## Docker
 
 <a id="embeddings_clustering"></a>
