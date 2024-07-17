@@ -73,7 +73,7 @@
 4. ***tier1.csv:*** This file contains USENIX Security (Tier 1 Security Conferences) data from previous work required to visualize Figure 6 in our paper.
 ## Scripts
 Scripts used for analyses and figures are located in the ***scripts*** folder. To reproduce our figures, please run all cells in order after satisfying all dependency requirements listed below. All scripts for creating figures use ***Python 3.9.13*** and require changing the file/folder paths (Areas where file *PATH* must be changed/added are written in **bold** or commented within each script):
-1. *figures_4_and_6.ipynb:* This Jupyter Notebook script contains the codes to reproduce Figure 4 and Figure 6 in the paper.
+1. *figures_4_and_6.ipynb:* This Jupyter Notebook script contains the codes to reproduce Figure 4 (Papers with Code by Year) and Figure 6 (Code Compiles by Conference) in the paper.
    - The following packages are used to run this code:
      ```
      matplotlib==3.5.2
@@ -83,13 +83,20 @@ Scripts used for analyses and figures are located in the ***scripts*** folder. T
      plotly_express==0.4.1
      seaborn==0.11.2
      ```
-2. *coxcombs.ipynb:* This script reproduces Figure 2 and Figure 3 from the paper.
-   - Packages required to run the script:
+2. *coxcombs.ipynb:* This script reproduces Figure 2 (Indirect Study) and Figure 3 (Direct Study) from the paper.
+   - Packages required to run this script:
      ```
      matplotlib==3.5.2
      numpy==1.23.5
      pandas==1.4.4
      seaborn==0.11.2
+     ```
+3. *figure_10.ipynb:* Reproduces Figure 10 from the paper (Reproducibility by Funding Agency).
+   - Packages required to run this script:
+     ```
+     nltk==3.7
+     numpy==1.23.5
+     pandas==1.4.4
      ```
 ## Docker
 
