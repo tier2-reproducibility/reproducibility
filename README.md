@@ -107,7 +107,7 @@ Scripts used for analyses and figures are located in the ***scripts*** folder. T
    ```
     git clone https://github.com/reproducibility-sec/reproducibility.git
    ```
-3. Run each cell in order for each script.
+3. Run each cell in order for each script by starting a Jupyter Notebook session with ```jupyter notebook``` and selecting the script you want to run in the ```scripts``` folder (i.e., *coxcombs.ipynb*).
 ## Docker
 
 <a id="embeddings_clustering"></a>
