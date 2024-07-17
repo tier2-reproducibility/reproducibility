@@ -13,7 +13,7 @@
    4. *Authors*: Authors of the paper
    5. *PDF Link*: Link to the PDF version of the paper
    6. *Code*: Link to the repository for code directly associated with the paper
-2. ***evaluation*** folder: contains the data of indirect and direct study:
+2. ***evaluation*** folder: contains the data of indirect and direct study. The coding of columns used in our analyses is briefly explained below and can also be found in greater detail in our paper:
    1. *Author Affiliation:*
       - 0: Academic
       - 1: Mainly Academic
@@ -49,12 +49,12 @@
       - 0: Compiles Right Away (No need to edit/modify code to compile the repo)
       - 1: Compiles After Edits (Edits in file structure/variables to get the code to run)
       - 2: Doesn't Run (Doesn't compile even after edits)
-      - 3: Ran and Does Not Compile (requires extra components/hardware (i.e., GPU, phone, raspberry pi, etc. not explicitly mentioned in repo/paper)
+      - 3: Ran and Does Not Compile (requires extra components/hardware (i.e., GPU, phone, Raspberry Pi, etc. not explicitly mentioned in repo/paper)
       - 4: Not Ran (requires extra components/hardware explicitly mentioned in paper/repo)
    8. *Output Matches:*
       - -1: Does Not Match (A tool/repo not designed/made for reproducibility)
       - 0: Output Does Not Match (Output is +/-10% difference compared to claims of paper.)
-      - 1: Output Matches (Best Effort, output is within +/-10% difference compared to claims of paper)
+      - 1: Output Matches (Best Effort, the output is within +/-10% difference compared to claims of paper)
    9. *Hardware:*
        - Free Response, list of extra hardware required in order to reproduce
    10. *Made for Reproducibility:*
@@ -70,11 +70,11 @@
        - 3: Artifact Replicated Badge
        - 4: Artifact Available Badge
 3. ***full*** folder: contains merged rows from data in ***evaluation*** folder for executing Coxcomb graphs.
-4. ***tier1.csv:*** This file contains USENIX (Tier 1 Security Conferences) data from previous work required to visualize Figure 6 in our paper.
+4. ***tier1.csv:*** This file contains USENIX Security (Tier 1 Security Conferences) data from previous work required to visualize Figure 6 in our paper.
 ## Scripts
 Scripts used for analyses and figures are located in the ***scripts*** folder. To reproduce our figures, please run all cells in order after satisfying all dependency requirements listed below. All scripts for creating figures use ***Python 3.9.13*** and require changing the file/folder paths (Areas where file *PATH* must be changed/added are written in **bold** or commented within each script):
 1. *figures_4_and_6.ipynb:* This Jupyter Notebook script contains the codes to reproduce Figure 4 and Figure 6 in the paper.
-   - The following packages are used run this code:
+   - The following packages are used to run this code:
      ```
      matplotlib==3.5.2
      numpy==1.23.5
