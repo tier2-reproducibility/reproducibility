@@ -7,14 +7,14 @@
 - [Embeddings and Clustering](#embeddings_clustering)
   
 ## Data
-1. ***conf*** folder: contains data of all four Tier 2 Security conferences (ACSAC, AsiaCCS, EuroS&P, and WiSec), with the following rows:
+1. [***conf***](conf) folder: contains data of all four Tier 2 Security conferences (ACSAC, AsiaCCS, EuroS&P, and WiSec), with the following rows:
    1. *Conference*: The conference that the paper was accepted at
    2. *Year*: The year that the paper was published
    3. *Title*: The title of the paper
    4. *Authors*: Authors of the paper
    5. *PDF Link*: Link to the PDF version of the paper
    6. *Code*: Link to the repository for code directly associated with the paper
-2. ***evaluation*** folder: contains the data of indirect and direct study. The coding of columns used in our analyses is briefly explained below and can also be found in greater detail in our paper:
+2. [***evaluation***](evaluation) folder: contains the data of indirect and direct study. The coding of columns used in our analyses is briefly explained below and can also be found in greater detail in our paper:
    1. *Author Affiliation:*
       - 0: Academic
       - 1: Mainly Academic
@@ -70,13 +70,13 @@
        - 2: Artifact Reproduced Badge
        - 3: Artifact Replicated Badge
        - 4: Artifact Available Badge
-3. ***full*** folder: contains merged rows from data in ***evaluation*** folder for executing Coxcomb graphs.
-4. ***tier1.csv:*** This file contains USENIX Security (Tier 1 Security Conferences) data from previous work required to visualize Figure 6 in our paper.
-5. ***emails.pickle:*** Pickle file containing PDF naming schemes and associated email extensions of authors from each paper. Required to visualize Figure 9 in the paper.
+3. [***full***](full) folder: contains merged rows from data in ***evaluation*** folder for executing Coxcomb graphs.
+4. [***tier1.csv:***](tier1.csv) This file contains USENIX Security (Tier 1 Security Conferences) data from previous work required to visualize Figure 6 in our paper.
+5. [***emails.pickle:***](emails.pickle) Pickle file containing PDF naming schemes and associated email extensions of authors from each paper. Required to visualize Figure 9 in the paper.
    
 ## Scripts
 Scripts used for analyses and figures are located in the ***scripts*** folder. To reproduce our figures, please run all cells in order after satisfying all dependency requirements listed below. All scripts for creating figures use ***Python 3.9.13*** and require changing the file/folder paths (Areas where file *PATH* must be changed/added are written in **bold** or commented within each script):
-1. *figures_4_and_6.ipynb:* This Jupyter Notebook script contains the codes to reproduce Figure 4 (Papers with Code by Year) and Figure 6 (Code Compiles by Conference) in the paper.
+1. [*figures_4_and_6.ipynb:*](scripts/figures_4_and_6.ipynb) This Jupyter Notebook script contains the codes to reproduce Figure 4 (Papers with Code by Year) and Figure 6 (Code Compiles by Conference) in the paper.
    - The following packages are used to run this code:
      ```
      matplotlib==3.5.2
@@ -86,7 +86,7 @@ Scripts used for analyses and figures are located in the ***scripts*** folder. T
      plotly_express==0.4.1
      seaborn==0.11.2
      ```
-2. *coxcombs.ipynb:* This script reproduces Figure 2 (Indirect Study) and Figure 3 (Direct Study) from the paper.
+2. [*coxcombs.ipynb:*](scripts/coxcombs.ipynb) This script reproduces Figure 2 (Indirect Study) and Figure 3 (Direct Study) from the paper.
    - Packages required to run this script:
      ```
      matplotlib==3.5.2
@@ -94,7 +94,7 @@ Scripts used for analyses and figures are located in the ***scripts*** folder. T
      pandas==1.4.4
      seaborn==0.11.2
      ```
-3. *figure_10.ipynb:* Reproduces Figure 10 from the paper (Reproducibility by Funding Agency).
+3. [*figure_10.ipynb:*](scripts/figure_10.ipynb) Reproduces Figure 10 from the paper (Reproducibility by Funding Agency).
    - Packages required to run this script:
      ```
      nltk==3.7
@@ -102,7 +102,7 @@ Scripts used for analyses and figures are located in the ***scripts*** folder. T
      pandas==1.4.4
      ```
    - *This figure may vary slightly for Funding Agency labels with a count <= 3, due to the number of Funding Agencies with equal counts.*
-4. *figure_9.ipynb:* Reproduces Figure 9 from the paper (Code Compiles by Affiliation).
+4. [*figure_9.ipynb:*](scripts/figure_9.ipynb) Reproduces Figure 9 from the paper (Code Compiles by Affiliation).
    - Packages required to run this script:
      ```
      numpy==1.23.5
@@ -117,7 +117,7 @@ Scripts used for analyses and figures are located in the ***scripts*** folder. T
     git clone https://github.com/reproducibility-sec/reproducibility.git
    ```
 3. Modify the *PATH* variable(s) in each script to match your own local file path.
-4. Run each cell (in order) for each script by starting a Jupyter Notebook session with ```jupyter notebook``` and selecting the script you would like to run in the ```scripts``` folder (i.e., *coxcombs.ipynb*).
+4. Run each cell (in order) for each script by starting a Jupyter Notebook session with ```jupyter notebook``` and selecting the script you would like to run in the [***scripts***](scripts) folder (i.e., *coxcombs.ipynb*).
 
 ## Docker
 
